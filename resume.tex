@@ -1,0 +1,201 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Midhun Mareedu} \\ \vspace{1pt}
+    \small +91 6300399969 $|$ \href{mailto:midhunmareedu@gmail.com}{\underline{midhunmareedu@gmail.com}} $|$ 
+    \href{http://linkedin.com/in/midhunmareedu/}{\underline{linkedin.com/in/midhunmareedu/}} $|$
+    \href{http://github.com/venkatmidhunmareedu}{\underline{github.com/venkatmidhunmareedu}}
+\end{center}
+
+%-----------ABOUT-----------
+\section{About}
+Aspiring AI Engineer and Full Stack Developer with a focus on integrating \textbf{Generative AI} and \textbf{Large Language Models} into scalable web architectures. Expert at building responsive UIs in \textbf{Next.js} and bridging the gap between sophisticated machine learning models and user-centric applications. Passionate about \textbf{RAG (Retrieval-Augmented Generation)}, prompt engineering, and optimizing model inference. A collaborative problem-solver committed to developing intelligent, data-driven solutions that solve complex real-world challenges.
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {JNTU-GV}{Vijayanagaram, Andhra Pradesh}
+      {Bachelor of Technology, Computer Science \& Engineering}{Jan. 2021 -- April 2024}
+  \resumeSubHeadingListEnd
+
+
+  
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, Python, JavaScript, Go} \\
+     \textbf{Frameworks \& Libraries}{: React.js, Next.js, Electron.js, Node.js, FastAPI, Vercel AI SDK, LangChain.js} \\
+     \textbf{Developer Tools}{: Vite+, Turborepo, Docker, k9s, MCP (Servers \& Clients), Ollama, Git} \\
+     \textbf{UI Frameworks \& Styling}{: Tailwind CSS, shadcn UI} \\
+     \textbf{Databases}{: MySQL, PostgreSQL, MongoDB, VectorDB (ChromaDB, LanceDB)}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SDE-I}{Aug 2025 -- Present}
+      {DeeptaAI}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem{Architected scalable Chatbot and Form SDKs using Turborepo for cross-platform university integration.}
+        \resumeItem{Engineered academic infrastructure modules to manage complex program and course hierarchies.}
+        \resumeItem{Implemented secure multi-channel payment systems for self-funded and loan-based transactions.}
+        \resumeItem{Developed automated post-exam workflows for high-concurrency results and re-correction logic.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Associate SDE}{Dec 2024 -- July 2025}
+      {Apxor}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem{Built a Gen-AI chatbot translating natural language to Clickhouse SQL for automated data visualization.}
+        \resumeItem{Led frontend development for high-traffic platforms, optimizing performance and user retention.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full Stack Web Developer}{Feb 2024 -- Aug 2024}
+      {IncrivelSoft, Inc}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem{Co-led the frontend team in delivering responsive MERN stack interfaces and high-fidelity UI components.}
+        \resumeItem{Integrated complex UI with backend APIs to ensure data integrity and seamless end-to-end UX.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\underline{\href{https://github.com/venkatmidhunmareedu/synapse}{Synapse}}} $|$ \emph{Electron.js, React, LanceDB, Ollama, Langchain.js, AI SDK}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a \textbf{Local AI enhanced PDF viewer} (Desktop Application) with Langchain.js Lib integrated with AI SDK.}
+            \resumeItem{Enhanced built-in AI tools such as automatic page redirection, Inline AI Ask and AI search.}
+            \resumeItem{Used React PDF Viewer Libray for simple PDF out of the box utilities. LanceDB for storing generated embeddings for quick and easy context retrieval.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Support AI Chatbot} $|$ \emph{ React, MonogDB, AI SDK}}{}
+          \resumeItemListStart
+            \resumeItem{\textbf{RAG driven Chat Bot Widget} (NPM package and script) offering configurable system prompts and pluggable toolsets tailored for a specific organization enterprise.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+\end{document}
