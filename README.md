@@ -16,7 +16,8 @@
 1. Find `LaTex Workshop` extension and install it. ([https://marketplace.cursorapi.com/items/?itemName=James-Yu.latex-workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop))
 2. If your platform is:
 - Linux :
-	- `sudo apt install texlive-latex-base texlive-fonts-recommended latexmk`
+	- `sudo apt install texlive-latex-base texlive-fonts-recommended latexmk texlive-latex-extra`
+	- **(Warning)** This command downloads packages upto 600MB of data. 
 - Windows:
 	- You have install `Perl` from [https://strawberryperl.com/](https://strawberryperl.com/)
 	- if it's not installed already, open the `MikTeX` Package Manager and install the `latexmk` package.
