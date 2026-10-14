@@ -64,7 +64,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1}
   }
 }
 
@@ -79,7 +79,7 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-4pt}
+    \end{tabular*}\vspace{0pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -92,8 +92,8 @@
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-4pt}
+      \small\strut #1 & #2 \\
+    \end{tabular*}\vspace{0pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -102,8 +102,8 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=0pt,partopsep=0pt,itemsep=0pt,parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -128,7 +128,7 @@
 % %-----------PROFESSIONAL SUMMARY-----------
 \section{Professional Summary}
   \vspace{1pt}
-  \summarySection{Full Stack Developer with \textbf{1.5+ years of experience} building scalable web applications and aspiring AI Engineer focused on production-grade \textbf{Generative AI} applications using \textbf{Large Language Models (LLMs)}, \textbf{RAG (Retrieval-Augmented Generation)}, and prompt engineering. Experienced in integrating AI systems into scalable products with \textbf{Next.js}, \textbf{FastAPI}, \textbf{Vercel AI SDK}, and modern AI toolchains. Passionate about translating machine learning capabilities into reliable, user-facing features.}
+  \summarySection{Full Stack Developer with \textbf{2+ years of experience} building scalable web applications and aspiring AI Engineer focused on production-grade \textbf{Generative AI} applications using \textbf{Large Language Models (LLMs)}, \textbf{RAG (Retrieval-Augmented Generation)}, and prompt engineering. Experienced in integrating AI systems into scalable products with \textbf{Next.js}, \textbf{FastAPI}, \textbf{Vercel AI SDK}, and modern AI toolchains. Passionate about translating machine learning capabilities into reliable, user-facing features.}
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
@@ -148,6 +148,7 @@
      \textbf{AI/ML}{: Generative AI, Large Language Models (LLMs), RAG, Prompt Engineering, Context Engineering, LangChain.js, Vercel AI SDK, Ollama, Vector Databases, MCP (Servers \& Clients)} \\
      \textbf{Frameworks \& Libraries}{: React.js, Next.js, Electron.js, Node.js, Express.js, FastAPI} \\
      \textbf{Developer Tools}{: Turborepo, Vite, Docker, k9s, Git} \\
+     \textbf{Cloud \& IaC}{: AWS (EC2), Google Cloud (Compute Engine), Oracle Cloud (Compute VMs), Terraform, k9s} \\
      \textbf{UI Frameworks \& Styling}{: Tailwind CSS, shadcn UI, Framer Motion} \\
      \textbf{Databases}{: MySQL, PostgreSQL, MongoDB, VectorDB (ChromaDB, LanceDB)}
     }}
@@ -192,6 +193,12 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
+          {\textbf{\underline{\href{https://hirekit.run.place}{HireKit}}} $|$ \emph{Python, FastAPI, PostgreSQL, React, Vite, Docker, Oracle Cloud, LLMs}}{}
+          \resumeItemListStart
+            \resumeItem{Built an \textbf{evidence-backed, anonymized resume screening} platform: every score cites a verified quote, and all LLM calls go through one gateway with token caps, logging, and a USD 8 spend limit.}
+            \resumeItem{Deployed the API, worker, and web app on a single Oracle Cloud VM using Docker, Caddy, and Compose.}
+          \resumeItemListEnd
+      \resumeProjectHeading
           {\textbf{\underline{\href{https://github.com/venkatmidhunmareedu/synapse}{Synapse}}} $|$ \emph{Electron.js, React, LanceDB, Ollama, Langchain.js, AI SDK}}{}
           \resumeItemListStart
             \resumeItem{Developed a \textbf{local AI-enhanced PDF viewer} desktop application with LangChain.js and Vercel AI SDK.}
@@ -207,7 +214,7 @@
           {\textbf{\underline{\href{https://github.com/venkatmidhunmareedu/overmind}{Overmind}}} $|$ \emph{Skill.md, LaTex}}{}
           \resumeItemListStart
             \resumeItem{Overmind is a LaTeX-based resume workflow for creating a clean base resume and generating role-specific variants quickly. }
-            \resumeItem{It is designed for iterative editing in Cursor/VS Code, ATS-oriented tuning, and reproducible PDF output (resume.pdf) from source files in this repository.}
+            \resumeItem{Supports ATS-oriented tuning in Cursor/VS Code with reproducible PDF output.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
