@@ -44,7 +44,8 @@
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\textheight}{1.6in}
+\addtolength{\topmargin}{-.3in}
 
 \urlstyle{same}
 
@@ -128,7 +129,7 @@
 % %-----------PROFESSIONAL SUMMARY-----------
 \section{Professional Summary}
   \vspace{1pt}
-  \summarySection{Full Stack Developer with \textbf{2+ years of experience} building scalable web applications and aspiring AI Engineer focused on production-grade \textbf{Generative AI} applications using \textbf{Large Language Models (LLMs)}, \textbf{RAG (Retrieval-Augmented Generation)}, and prompt engineering. Experienced in integrating AI systems into scalable products with \textbf{Next.js}, \textbf{FastAPI}, \textbf{Vercel AI SDK}, and modern AI toolchains. Passionate about translating machine learning capabilities into reliable, user-facing features.}
+  \summarySection{Full Stack Developer with \textbf{2+ years of experience} building scalable web applications and aspiring AI Engineer focused on production-grade \textbf{Generative AI} applications using \textbf{Large Language Models (LLMs)}, \textbf{RAG (Retrieval-Augmented Generation)}, and prompt engineering. Experienced in integrating AI systems into scalable products with \textbf{Next.js}, \textbf{FastAPI}, \textbf{Vercel AI SDK}, and modern AI toolchains.}
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
@@ -144,8 +145,9 @@
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, Java, JavaScript, Go, C} \\
+     \textbf{Languages}{: Python, Java, JavaScript, Go} \\
      \textbf{AI/ML}{: Generative AI, Large Language Models (LLMs), RAG, Prompt Engineering, Context Engineering, LangChain.js, Vercel AI SDK, Ollama, Vector Databases, MCP (Servers \& Clients)} \\
+     \textbf{Reverse Engineering \& Agents}{: REA, APK analysis, protocol reverse engineering, Claude Code (skills), Cursor, DeepSeek} \\
      \textbf{Frameworks \& Libraries}{: React.js, Next.js, Electron.js, Node.js, Express.js, FastAPI} \\
      \textbf{Developer Tools}{: Turborepo, Vite, Docker, Kubernetes, Git, GitHub Actions, GitLab CI/CD, Vitest, Playwright} \\
      \textbf{Cloud \& IaC}{: AWS (EC2), Google Cloud (Compute Engine), Oracle Cloud (Compute VMs), Terraform, Kubernetes} \\
@@ -176,8 +178,8 @@
       {\href{https://www.apxor.com/}{\underline{Apxor}}}{Hyderabad, India}
       \resumeItemListStart
         \resumeItem{Built a Generative AI chatbot that translated natural language into ClickHouse SQL, enabling automated analytics and data visualization workflows.}
-        \resumeItem{Optimized web application performance to 98\% by implementing caching strategies, lighthouse audits, and performance monitoring.}
-        \resumeItem{Led frontend development for high-traffic platforms, optimizing performance and user retention for AI-assisted analytics experiences.}
+        \resumeItem{Optimized web performance to 98\% via caching strategies, Lighthouse audits, and monitoring.}
+        \resumeItem{Led frontend development for high-traffic AI-assisted analytics platforms, optimizing performance and retention.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -193,6 +195,12 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
+          {\textbf{Archon} (DeeptaAI) $|$ \emph{Python, FastAPI, Supabase, React, Vite, TanStack Query, Expo, Docker, Terraform}}{}
+          \resumeItemListStart
+            \resumeItem{Built features for an \textbf{autonomous AI VC analyst}: founders portal, memo approvals, spreadsheet import, deal scoring.}
+            \resumeItem{Added email deal inbox, Telegram deal chat, bring-your-own LLM keys, and portfolio reminders with LP newsletter drafts.}
+          \resumeItemListEnd
+      \resumeProjectHeading
           {\textbf{\underline{\href{https://github.com/venkatmidhunmareedu/hirekit}{HireKit}}} $|$ \emph{Python, FastAPI, PostgreSQL, React, Vite, Docker, Oracle Cloud, LLMs}}{}
           \resumeItemListStart
             \resumeItem{Built an \textbf{evidence-backed, anonymized resume screening} platform: every score cites a verified quote, and all LLM calls go through one gateway with token caps, logging, and a USD 8 spend limit.}
@@ -206,15 +214,20 @@
             \resumeItem{Used LanceDB to store embeddings for low-latency retrieval and React PDF Viewer for core document interaction workflows.}
           \resumeItemListEnd
         \resumeProjectHeading
-          {\textbf{Support AI Chatbot} $|$ \emph{React, MongoDB, AI SDK, Go lang}}{}
+          {\textbf{Support AI Chatbot} ({\underline{\href{https://github.com/venkatmidhunmareedu/botnq-chat-widget}{\textbf{widget}}}}, {\underline{\href{https://github.com/venkatmidhunmareedu/botnq-service}{\textbf{service}}}}) $|$ \emph{React, MongoDB, ChromaDB, AI SDK, Go lang}}{}
           \resumeItemListStart
-            \resumeItem{Built a \textbf{RAG-driven support chatbot widget + server} (NPM package + script) with configurable system prompts and pluggable tools for enterprise knowledge bases.}
+            \resumeItem{Built a \textbf{RAG-driven support chatbot widget + server} (NPM package) with configurable prompts and pluggable tools.}
           \resumeItemListEnd
         \resumeProjectHeading
           {\textbf{\underline{\href{https://github.com/venkatmidhunmareedu/overmind}{Overmind}}} $|$ \emph{Skill.md, LaTex}}{}
           \resumeItemListStart
-            \resumeItem{Overmind is a LaTeX-based resume workflow for creating a clean base resume and generating role-specific variants quickly. }
-            \resumeItem{Supports ATS-oriented tuning in Cursor/VS Code with reproducible PDF output.}
+            \resumeItem{LaTeX resume workflow for ATS-tuned, role-specific variants with reproducible PDF output.}
+          \resumeItemListEnd
+
+      \item\small\textbf{Reverse Engineering Projects} (REA, Claude Code)
+          \resumeItemListStart
+            \resumeItem{\textbf{\underline{\href{https://github.com/venkatmidhunmareedu/pocket}{Pocket}}} (\emph{Kotlin, Android}): Expense tracker rebuilt from MyMoney, adding UPI payment detection and an AI spending chat.}
+            \resumeItem{\textbf{\underline{\href{https://github.com/venkatmidhunmareedu/realme-link-desktop}{Realme Link Desktop}}} (\emph{Tauri, Rust, TypeScript}): Linux Realme Link replacement using a reverse-engineered BT protocol.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
